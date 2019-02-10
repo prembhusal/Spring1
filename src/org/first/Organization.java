@@ -25,4 +25,11 @@ public class Organization {
 	public void displayEmployees() {
 		System.out.println("Employees Name :"+employees);
 	}
+	
+	public void init() {
+		System.out.println("init method called");
+	}
+	public void destroy() {
+		System.out.println("Destroy method called");
+	}
 }
