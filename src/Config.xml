@@ -19,6 +19,6 @@
   
    </bean>
    <bean id ="teaBean" class ="org.first.Tea"></bean>
-   
+	<bean class ="org.first.TestBeanPostProcessor"></bean>   
 
 </beans>
