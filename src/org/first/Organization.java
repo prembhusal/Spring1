@@ -5,11 +5,16 @@ import java.util.List;
 public class Organization {
 	HotItem hotItem;
 	private List employees;
+	private String HelloMsg;
 	/*//constructor method
 	Organization(HotItem hotDrink) {
 		this.hotItem = hotDrink;
 	}*/
 	
+	public void setHelloMsg(String helloMsg) {
+		HelloMsg = helloMsg;
+	}
+
 	public void setEmployees(List employees) {
 		this.employees = employees;
 	}
@@ -31,5 +36,8 @@ public class Organization {
 	}
 	public void destroy() {
 		System.out.println("Destroy method called");
+	}
+	public void printMsg() {
+		System.out.println(HelloMsg);
 	}
 }

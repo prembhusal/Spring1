@@ -13,5 +13,8 @@ public static void main( String[] args) {
 	Organization objRest = (Organization) context.getBean("helloBean");
 	objRest.prepareHotDrink();
 	objRest.displayEmployees();
+	
+	Organization objRest1 = (Organization) context.getBean("helloMsgBean");
+	objRest1.printMsg();
 }
 }

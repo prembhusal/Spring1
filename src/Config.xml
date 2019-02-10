@@ -20,5 +20,17 @@
    </bean>
    <bean id ="teaBean" class ="org.first.Tea"></bean>
 	<bean class ="org.first.TestBeanPostProcessor"></bean>   
+	
+	<bean id ="helloMsgBean" class="org.first.Organization">
+	<property name ="HelloMsg" value ="${HelloMessage}"></property></bean>
 
+	<bean
+	  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="locations">
+	        <list>
+	            <value>classpath:spring.properties</value>
+	        </list>
+	    </property>
+	    <property name="ignoreUnresolvablePlaceholders" value="true"/>
+	</bean>
 </beans>
